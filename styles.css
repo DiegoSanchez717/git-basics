@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+}
+
+ul {
+    list-style: none
+}
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+h1 {
+    color:white
+}
+
+body {
+    font-family: "matangi", sans-serif;
+    background-image: url("crown-of-thorns.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 200dvh
+    /* height: 200vh; */
+    /* background: linear-gradient(to top,white, #0e2345); */   
+}
+
+/* .navbar {
+    position: fixed;
+    top: 0;
+    margin: 100%;
+} */
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(217 71% 9% / 1);
+    /* border-radius: 100vw;
+    margin-block: .5em; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(white, #071429e6);
+    border: .20em solid rgb(171, 150, 91);
+    border-radius: 100vw;
+}
+
+.header {
+    background-color: #071429e6;
+    position: sticky;
+    top: 0;
+}
+
+.header__content {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0  auto;
+    padding: 0 30px;
+}
+
+.nav_list {
+    display: flex;
+    column-gap: 40px
+}
+
+/* .nav_item {} */
+
+.nav_link {
+    font-size: 15px;
+    color: rgba(255,255,255,0.75);
+    transition: all 0.4s;
+}
+
+.nav_link:hover {
+    color: rgba(255,255,255,1);
+}
+
+.btn {
+    color: white;
+    background-color: rgb(171, 150, 91);
+    padding: 7px 18px;
+    border-radius: 1000px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: #ccb77a
+}
+
+/* Media Queries */
+@media (max-width: 650px) {
+    .header__content {
+        flex-direction: column;
+        padding: 25px 0;
+        row-gap: 18px;
+    }
+    .nav_list {
+        column-gap: 20px;
+    }
+}
+
+main {
+    padding: 5px;
+    /* background-color: #0e2345; */
+    color: white;
+    border-radius: 10px
+}
+
+h2 {
+    color: white
+}
+
+p {
+    color:white
+}
+
+label {
+    color: white
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
